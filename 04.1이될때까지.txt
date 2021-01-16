@@ -1,0 +1,19 @@
+n, m = map(int,input().split())
+result = 0
+
+while True:
+    near = n // m * m
+    
+    result += n - near
+    n = near
+#가장가까운 배수 찾기
+    if n < m:
+        break
+    
+    n //= m
+    result += 1
+    
+#1될때까지 빼기
+result += n-1
+
+print(result)
