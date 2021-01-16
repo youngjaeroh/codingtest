@@ -1,0 +1,14 @@
+n = int(input())
+data = list(map(int,input().split()))
+
+data.sort()
+count = 0
+group = 0
+
+for i in data:
+    count += 1
+    if i <= count:
+        group += 1
+        count = 0
+print(group)
+#현재그룹에 모험가수 >= 확인하는공포도이면 그룹으로설정

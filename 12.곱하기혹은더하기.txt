@@ -1,0 +1,16 @@
+data = input()
+num = 0
+result = int(data[0])
+#문자열 받고 배열처럼 사용가능
+
+
+for i in range(1,len(data)):
+    num = int(data[i])
+    if result <= 1 or num <= 1:
+        #0번데이터를 한번만 검사하고 나중에는 검사안하는 방법
+        result += num
+    else:
+        result *= num
+    
+
+print(result)
