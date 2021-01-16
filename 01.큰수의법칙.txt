@@ -1,0 +1,12 @@
+n, m, k = map(int,input().split())
+data = list(map(int,input().split()))
+
+data.sort()
+first = data[n-1]
+second = data[n-2]
+
+result = (m // (k+1) * k + m % (k+1)) * first + (m // (k+1) * second)
+#큰수곱하는횟수 * 큰수 + 둘큰수곱하는횟수 * 둘큰수
+
+print(result)
+
