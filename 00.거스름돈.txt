@@ -1,0 +1,10 @@
+n = 1260
+
+array = [500,100,50,10]
+result = 0
+
+for i in array:
+    result += (n // i)
+    n %= i
+    
+print(result)
