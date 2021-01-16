@@ -1,0 +1,13 @@
+n, m = map(int,input().split())
+max = 0
+
+for _ in range(n):
+    data = list(map(int,input().split()))
+    data.sort()
+    
+    if data[0] > max:
+        max = data[0]
+
+print(max)
+
+#2차원배열은 한줄씩 여려번받기
